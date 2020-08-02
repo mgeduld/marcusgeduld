@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "defb65b17a8a129b2c60610dfe2acae2",
+    "revision": "06877a133c53c50ce8a5b07ab76cc2bd",
     "url": "/marcusgeduld/index.html"
   },
   {
-    "revision": "0d013627ac3564fc7c62",
+    "revision": "79c2a3e148e95ff0e8d8",
     "url": "/marcusgeduld/static/css/main.5ecd60fb.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/marcusgeduld/static/js/2.846e0fef.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "0d013627ac3564fc7c62",
-    "url": "/marcusgeduld/static/js/main.a327ac5b.chunk.js"
+    "revision": "79c2a3e148e95ff0e8d8",
+    "url": "/marcusgeduld/static/js/main.3ef36987.chunk.js"
   },
   {
     "revision": "9551f98f6b22ad1a7fc5",

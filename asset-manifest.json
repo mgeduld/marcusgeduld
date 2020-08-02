@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/marcusgeduld/static/css/main.5ecd60fb.chunk.css",
-    "main.js": "/marcusgeduld/static/js/main.a327ac5b.chunk.js",
-    "main.js.map": "/marcusgeduld/static/js/main.a327ac5b.chunk.js.map",
+    "main.js": "/marcusgeduld/static/js/main.3ef36987.chunk.js",
+    "main.js.map": "/marcusgeduld/static/js/main.3ef36987.chunk.js.map",
     "runtime-main.js": "/marcusgeduld/static/js/runtime-main.ababbe59.js",
     "runtime-main.js.map": "/marcusgeduld/static/js/runtime-main.ababbe59.js.map",
     "static/js/2.846e0fef.chunk.js": "/marcusgeduld/static/js/2.846e0fef.chunk.js",
     "static/js/2.846e0fef.chunk.js.map": "/marcusgeduld/static/js/2.846e0fef.chunk.js.map",
     "index.html": "/marcusgeduld/index.html",
-    "precache-manifest.29b469901441168a796cfcf86ee40b54.js": "/marcusgeduld/precache-manifest.29b469901441168a796cfcf86ee40b54.js",
+    "precache-manifest.fa2c77f143dda6d700e146598b0f30c4.js": "/marcusgeduld/precache-manifest.fa2c77f143dda6d700e146598b0f30c4.js",
     "service-worker.js": "/marcusgeduld/service-worker.js",
     "static/css/main.5ecd60fb.chunk.css.map": "/marcusgeduld/static/css/main.5ecd60fb.chunk.css.map",
     "static/js/2.846e0fef.chunk.js.LICENSE.txt": "/marcusgeduld/static/js/2.846e0fef.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.ababbe59.js",
     "static/js/2.846e0fef.chunk.js",
     "static/css/main.5ecd60fb.chunk.css",
-    "static/js/main.a327ac5b.chunk.js"
+    "static/js/main.3ef36987.chunk.js"
   ]
 }
