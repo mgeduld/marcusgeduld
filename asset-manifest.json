@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/marcusgeduld/static/css/main.5ecd60fb.chunk.css",
+    "main.js": "/marcusgeduld/static/js/main.dc8e1e93.chunk.js",
+    "main.js.map": "/marcusgeduld/static/js/main.dc8e1e93.chunk.js.map",
+    "runtime-main.js": "/marcusgeduld/static/js/runtime-main.ababbe59.js",
+    "runtime-main.js.map": "/marcusgeduld/static/js/runtime-main.ababbe59.js.map",
+    "static/js/2.846e0fef.chunk.js": "/marcusgeduld/static/js/2.846e0fef.chunk.js",
+    "static/js/2.846e0fef.chunk.js.map": "/marcusgeduld/static/js/2.846e0fef.chunk.js.map",
+    "index.html": "/marcusgeduld/index.html",
+    "precache-manifest.6f02ec5ca8a8c9a18ef32c1f456b4e43.js": "/marcusgeduld/precache-manifest.6f02ec5ca8a8c9a18ef32c1f456b4e43.js",
+    "service-worker.js": "/marcusgeduld/service-worker.js",
+    "static/css/main.5ecd60fb.chunk.css.map": "/marcusgeduld/static/css/main.5ecd60fb.chunk.css.map",
+    "static/js/2.846e0fef.chunk.js.LICENSE.txt": "/marcusgeduld/static/js/2.846e0fef.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ababbe59.js",
+    "static/js/2.846e0fef.chunk.js",
+    "static/css/main.5ecd60fb.chunk.css",
+    "static/js/main.dc8e1e93.chunk.js"
+  ]
+}
