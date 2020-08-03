@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.js": "/marcusgeduld/static/js/main.3f217e6c.chunk.js",
-    "main.js.map": "/marcusgeduld/static/js/main.3f217e6c.chunk.js.map",
+    "main.js": "/marcusgeduld/static/js/main.7e017bf2.chunk.js",
+    "main.js.map": "/marcusgeduld/static/js/main.7e017bf2.chunk.js.map",
     "runtime-main.js": "/marcusgeduld/static/js/runtime-main.89c9cfd5.js",
     "runtime-main.js.map": "/marcusgeduld/static/js/runtime-main.89c9cfd5.js.map",
-    "static/js/2.ecd8f716.chunk.js": "/marcusgeduld/static/js/2.ecd8f716.chunk.js",
-    "static/js/2.ecd8f716.chunk.js.map": "/marcusgeduld/static/js/2.ecd8f716.chunk.js.map",
+    "static/js/2.899c13ee.chunk.js": "/marcusgeduld/static/js/2.899c13ee.chunk.js",
+    "static/js/2.899c13ee.chunk.js.map": "/marcusgeduld/static/js/2.899c13ee.chunk.js.map",
     "index.html": "/marcusgeduld/index.html",
-    "precache-manifest.5400e8647251d6c61955f64b278549e9.js": "/marcusgeduld/precache-manifest.5400e8647251d6c61955f64b278549e9.js",
+    "precache-manifest.a14148f51a5e28e2d95b8d5c1c5b5ff9.js": "/marcusgeduld/precache-manifest.a14148f51a5e28e2d95b8d5c1c5b5ff9.js",
     "service-worker.js": "/marcusgeduld/service-worker.js",
-    "static/js/2.ecd8f716.chunk.js.LICENSE.txt": "/marcusgeduld/static/js/2.ecd8f716.chunk.js.LICENSE.txt"
+    "static/js/2.899c13ee.chunk.js.LICENSE.txt": "/marcusgeduld/static/js/2.899c13ee.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.89c9cfd5.js",
-    "static/js/2.ecd8f716.chunk.js",
-    "static/js/main.3f217e6c.chunk.js"
+    "static/js/2.899c13ee.chunk.js",
+    "static/js/main.7e017bf2.chunk.js"
   ]
 }
