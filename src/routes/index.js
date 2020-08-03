@@ -2,7 +2,7 @@ import React from 'react'
 import { Switch, Route } from 'react-router-dom'
 
 import { About } from '../about'
-import { Blog } from '../blog'
+import { Blog, BlogPage } from '../blog/'
 import { Home } from '../home'
 import { Resume } from '../resume'
 
@@ -11,6 +11,9 @@ export const Routes = () => {
       <Switch>
         <Route path="/marcusgeduld/about">
           <About />
+        </Route>
+        <Route path="/marcusgeduld/blog/:postId">
+          <BlogPage />
         </Route>
         <Route path="/marcusgeduld/blog">
           <Blog />

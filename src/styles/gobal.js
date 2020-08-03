@@ -13,8 +13,8 @@ const styles = {
   body: {
     backgroundColor: baseColor,
     fontFamily: ['serif', 'Cormorant Garamond'],
-    '-webkit-font-smoothing': 'antialiased',
-    '-moz-osx-font-smoothing': 'grayscale',
+    WebkitFontSmoothing: 'antialiased',
+    MozOsxFontSmoothing: 'grayscale',
     fontSize: 16,
   },
   '.page': {
