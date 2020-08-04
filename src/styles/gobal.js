@@ -19,6 +19,7 @@ const styles = {
   },
   '.page': {
     margin: '0 auto',
+    padding: space,
     width: '80%',
     maxWidth: 800,
     backgroundColor: '#eee',

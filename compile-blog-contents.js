@@ -25,6 +25,16 @@ const getTeaser = (post) => {
   return stripped.substring(0, TEASER_LENGTH).replace(/<[^>]*$/, '')
 }
 
+const getKeyAndValue = (pair) => {
+  // foo: 'bar:baz'
+  const delimeter = ':'
+  const parts = pair.split(delimeter)
+  const key = parts.shift().trim()
+  // parts = ["foo ", "'bar", "baz'"]
+  const value = parts.join(delimeter).trim()
+  return [key, value]
+}
+
 const getPostData = (contents) => {
   const delimeter = '---\n'
   const parts = contents.split(delimeter)
@@ -34,8 +44,8 @@ const getPostData = (contents) => {
   const metaPairs = meta.split('\n')
   const metadata = metaPairs.reduce((data, pair) => {
     if (pair.includes(':')) {
-      const [key, value] = pair.split(':')
-      data[key.trim()] = value.trim()
+      const [key, value] = getKeyAndValue(pair)
+      data[key] = value
     }
     return data
   }, {})
@@ -44,7 +54,7 @@ const getPostData = (contents) => {
 
 const data = []
 
-readFiles(path.join(__dirname, '/public/blog/'), (filename, contents) => {
+readFiles(path.join(__dirname, '/public/blog-posts/'), (filename, contents) => {
   if (filename.includes('.md')) {
     const [metadata, post] = getPostData(contents)
     data.push({
@@ -59,4 +69,4 @@ data.sort((a, b) => {
   return new Date(b.date) - new Date(a.date)
 })
 
-fs.writeFileSync(path.join(__dirname, '/public/blog/contents.json'), JSON.stringify(data))
+fs.writeFileSync(path.join(__dirname, '/public/blog-posts/contents.json'), JSON.stringify(data))
