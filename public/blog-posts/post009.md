@@ -1,12 +1,8 @@
 ---
-title: a very somewhat lengthy title that should be shortened
-date: 2020-07-01T02:16:00
-tags:
-- red
-- green
-- blue
+title: 9 a very somewhat lengthy title that should be shortened
+date: 2019-07-26T02:16:00
 ---
-But I won't be this time. This time, I'll keep it brief: goodbye. Aliqua magna pariatur ea sit adipisicing labore incididunt amet dolor magna ut. Quis irure veniam id ad mollit in nostrud nulla dolor consequat. Sint cillum tempor Lorem deserunt.
+Nine But I won't be this time. This time, I'll keep it brief: goodbye. Aliqua magna pariatur ea sit adipisicing labore incididunt amet dolor magna ut. Quis irure veniam id ad mollit in nostrud nulla dolor consequat. Sint cillum tempor Lorem deserunt.
 
 Est incididunt Lorem et sint est nostrud aliqua officia qui ea fugiat esse irure quis. Anim commodo incididunt velit officia dolor elit cillum consequat. Proident veniam ea aute exercitation Lorem consectetur amet.
 

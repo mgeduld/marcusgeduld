@@ -2,8 +2,9 @@ const fs = require('fs')
 const path = require('path')
 const remark = require('remark')
 const strip = require('strip-markdown')
+const jsYAML = require('js-yaml')
 
-const TEASER_LENGTH = 30 //characters
+const TEASER_LENGTH = 1000 //characters
 
 const readFiles = (dirname, onFileContent) => {
   const filenames = fs.readdirSync(dirname)
@@ -25,30 +26,12 @@ const getTeaser = (post) => {
   return stripped.substring(0, TEASER_LENGTH).replace(/<[^>]*$/, '')
 }
 
-const getKeyAndValue = (pair) => {
-  // foo: 'bar:baz'
-  const delimeter = ':'
-  const parts = pair.split(delimeter)
-  const key = parts.shift().trim()
-  // parts = ["foo ", "'bar", "baz'"]
-  const value = parts.join(delimeter).trim()
-  return [key, value]
-}
-
 const getPostData = (contents) => {
   const delimeter = '---\n'
   const parts = contents.split(delimeter)
   parts.shift()
-  const meta = parts.shift()
+  const metadata = jsYAML.load(parts.shift())
   const post = getTeaser(parts.join(delimeter))
-  const metaPairs = meta.split('\n')
-  const metadata = metaPairs.reduce((data, pair) => {
-    if (pair.includes(':')) {
-      const [key, value] = getKeyAndValue(pair)
-      data[key] = value
-    }
-    return data
-  }, {})
   return [metadata, post]
 }
 

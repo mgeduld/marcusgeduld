@@ -1,5 +1,8 @@
 # before launch
 
+## styling
+ * consolidate colors
+
 ## blog
 
  * extract blog titles and display them

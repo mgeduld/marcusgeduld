@@ -1,35 +1,53 @@
-const getKeyAndValue = (pair) => {
-  // foo: 'bar:baz'
-  const delimeter = ':'
-  const parts = pair.split(delimeter)
-  const key = parts.shift().trim()
-  // parts = ["foo ", "'bar", "baz'"]
-  const value = parts.join(delimeter).trim()
-  return [key, value]
-}
+import jsYAML from 'js-yaml'
 
 export const getPostData = (contents) => {
   const delimeter = '---\n'
   const parts = contents.split(delimeter)
   parts.shift()
-  const meta = parts.shift()
+  const metadata = jsYAML.load(parts.shift())
   const post = parts.join(delimeter)
-  const metaPairs = meta.split('\n')
-  const metadata = metaPairs.reduce((data, pair) => {
-    if (pair.includes(':')) {
-      const [key, value] = getKeyAndValue(pair)
-      data[key] = value
-    }
-    return data
-  }, {})
   return [metadata, post]
 }
 
-const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+const months = [
+  'January',
+  'February',
+  'March',
+  'April',
+  'May',
+  'June',
+  'July',
+  'August',
+  'September',
+  'October',
+  'November',
+  'December',
+]
 
 export const getDisplayDate = (dateString) => {
-  console.log('dateString', dateString)
   const date = new Date(dateString)
-  console.log('date', date)
   return `${months[date.getMonth()]} ${date.getDate()}, ${date.getFullYear()}`
+}
+
+export const getPostsGroupedByDate = (list) => {
+  return list.reduce((grouped, { date: dateString, title, file }) => {
+    const date = new Date(dateString)
+    const year = date.getFullYear()
+    const month = months[date.getMonth()]
+    const day = date.getDate()
+    grouped[year] = grouped[year] || {}
+    grouped[year][month] = grouped[year][month] || []
+    grouped[year][month].push({ title: `${title} (${month} ${day})`, file })
+    return grouped
+  }, {})
+}
+
+export const getPostsGroupedByTag = (list) => {
+  return list.reduce((grouped, { tags = [], title, file, date }) => {
+    tags.forEach((tag) => {
+      grouped[tag] = grouped[tag] || []
+      grouped[tag].push({ title, file, date })
+    })
+    return grouped
+  }, {})
 }
